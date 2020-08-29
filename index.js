@@ -1,8 +1,12 @@
 import SimplexNoise from "simplex-noise"
+import cuid from "cuid"
 
 let simplex = new SimplexNoise()
 
 const random = {
+    id() {
+        return cuid()
+    },
     boolean(likelihood = .5) {
         return Math.random() < likelihood
     },
