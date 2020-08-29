@@ -2,8 +2,8 @@
 This is a simple wrapper that provides utilities  for dealing with randomness.  This library uses `Math.random` as its random number generator. If you need a deterministic, mathematically correct random number generator, consider [`random-js`](https://www.npmjs.com/package/random-js) instead. Noise uses [`simplex-noise`](https://github.com/jwagner/simplex-noise.js), and ids [`cuid`](https://www.npmjs.com/package/cuid).
 
 1. `npm install @huth/random`
-2. Default export contains all available methods
 
+Default export contains all available methods:
 
 ```js
 import random from "@huth/random"
