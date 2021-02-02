@@ -1,13 +1,17 @@
 {
-  "name": "@huth/random",
-  "description": "Simple utility wrapper for generating randomness.",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://tommhuth@github.com/tommhuth/random.git",
-  "author": "Tomm Huth",
-  "license": "MIT",
-  "dependencies": {
-    "cuid": "^2.1.8",
-    "simplex-noise": "^2.4.0"
-  }
+    "name": "@huth/random",
+    "description": "Simple utility wrapper for generating randomness.",
+    "version": "2.0.0",
+    "main": "index.js",
+    "repository": "https://tommhuth@github.com/tommhuth/random.git",
+    "author": "Tomm Huth",
+    "license": "MIT",
+    "sideEffects": false,
+    "dependencies": {
+        "babel-eslint": "^10.1.0",
+        "cuid": "^2.1.8",
+        "eslint": "^6.8.0",
+        "eslint-plugin-babel": "^5.3.0",
+        "simplex-noise": "^2.4.0"
+    }
 }

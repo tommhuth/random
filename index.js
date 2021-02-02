@@ -1,7 +1,7 @@
 import SimplexNoise from "simplex-noise"
 import cuid from "cuid"
 
-let simplex = new SimplexNoise()
+let simplex = new SimplexNoise("seed") 
 
 const random = {
     id() {
