@@ -1,8 +1,6 @@
-import cuid from "cuid" 
-
 const random = {
     id() {
-        return cuid()
+        return crypto.randomUUID()
     },
     boolean(likelihood = .5) {
         return Math.random() < likelihood
@@ -15,7 +13,7 @@ const random = {
     },
     pick(...list) {
         return list[random.integer(0, list.length - 1)]
-    }, 
+    },
 }
 
 export default random
