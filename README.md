@@ -1,5 +1,5 @@
 # Random
-This is a simple wrapper that provides utilities  for dealing with randomness.  This library generally uses `Math.random` as its random number generator. If you need a deterministic, mathematically correct random number generator, consider [`random-js`](https://www.npmjs.com/package/random-js) instead. Ids use  [`cuid`](https://www.npmjs.com/package/cuid).
+This is a simple wrapper that provides utilities  for dealing with randomness.  This library generally uses `Math.random` as its random number generator.  
 
 1. `npm install @huth/random`
 
