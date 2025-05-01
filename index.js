@@ -1,21 +1,18 @@
 const random = {
     id() {
-        // https://chatgpt.com
-        const bytes = crypto.getRandomValues(new Uint8Array(16))
+        // chatgpt.com/
+        const b = crypto.getRandomValues(new Uint8Array(16))
 
-        // Per RFC4122: set bits for version and variant
-        bytes[6] = (bytes[6] & 0x0f) | 0x40 // version 4
-        bytes[8] = (bytes[8] & 0x3f) | 0x80 // variant 10
+        b[6] = (b[6] & 0x0f) | 0x40
+        b[8] = (b[8] & 0x3f) | 0x80
 
-        const toHex = (n) => n.toString(16).padStart(2, "0")
+        const hex = []
 
-        return [
-            [...bytes.slice(0, 4)].map(toHex).join(""),
-            [...bytes.slice(4, 6)].map(toHex).join(""),
-            [...bytes.slice(6, 8)].map(toHex).join(""),
-            [...bytes.slice(8, 10)].map(toHex).join(""),
-            [...bytes.slice(10, 16)].map(toHex).join("")
-        ].join("-")
+        for (let i = 0; i < 16; i++) {
+            hex.push(b[i].toString(16).padStart(2, "0"))
+        }
+
+        return `${hex[0]}${hex[1]}${hex[2]}${hex[3]}-${hex[4]}${hex[5]}-${hex[6]}${hex[7]}-${hex[8]}${hex[9]}-${hex[10]}${hex[11]}${hex[12]}${hex[13]}${hex[14]}${hex[15]}`
     },
     boolean(likelihood = .5) {
         return Math.random() < likelihood

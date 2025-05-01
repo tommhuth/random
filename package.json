@@ -1,7 +1,7 @@
 {
     "name": "@huth/random",
     "description": "Simple utility wrapper for generating randomness.",
-    "version": "6.0.1",
+    "version": "6.0.2",
     "main": "index.js",
     "repository": "https://tommhuth@github.com/tommhuth/random.git",
     "author": "Tomm Huth",
