@@ -18,4 +18,4 @@ The API includes the following methods for producing usefull random data:
 - `integer(min: number, max: number): number` inclusive random integer
 - `boolean(likelihood = .5): boolean` boolean where `likelihood` is a number in the range [0, 1] increasing the chance of `true`
 - `pick<T>(...args: T[]): T` returns a random element from the arguments provided
-- `id(): string` generates an id via `crypto.randomUUID()`
+- `id(): string` generates an id via `crypto.getRandomValues()`
